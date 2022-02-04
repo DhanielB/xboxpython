@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Programe HTML de GRAÇA - Floresty</title>
+  </head>
+  <body>
+    <textarea rows="20" name="input" id="input" class="input"></textarea>
+    <input name="refresh" id="refresh" class="refresh" type="button" onclick="refresh();"/>
+    <h1 id="htmlclass">a</h1>
+    <script type="text/javascript">
+      const input = document.getElementById("input");
+      const refreshelement = document.getElementById("refresh");
+      const htmlclass = document.getElementById("htmlclass");
+      
+      function refresh() {
+        htmlclass.innerHTML = input.value;
+      }
+      
+      refreshelement.addEventListener("click",refresh());
+    </script>
+  </body>
+</html>
